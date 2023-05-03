@@ -1,68 +1,122 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Welcome to my site!</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<style>
-body {background-color:#ffffff;background-image:url(https://images6.alphacoders.com/783/783112.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-</style>
-</head>
-<body>
-<h1></h1>
-<p></p>
-</body>
-</html>
-
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Insert your text here.</p>
-    </section>
-    
-    <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
-    </section>
-    
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; Delario corp 2023</p>
-  </footer>
-  
-  <script src="main.js"></script>
-</body>
-</html>
+<div class="header-section">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Anthony Anaedu</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#about">About</a></li>
+          <li role="presentation"><a href="#portfolio">Portfolio</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center intro-text">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Hello, I'm Anthony Anaedu.</h1>
+        <p>Software Developer, Technology enthusiast, EE Engineer.</p>
+      </div>
+      <div class="col-md-12">
+        <p class="intro-btns">
+          <a class="btn btn-info btn-lg" href="https://twitter.com/Blueghost1998" role="button" target="_blank"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+          <a class="btn btn-success btn-lg" href="https://t.me/Blueghost2003" role="button" target="_blank"><i class="fa fa-telegram fa-lg fa-fw"></i>Telegram</a>
+          <a class="btn btn-default btn-lg" href="https://www.github.com/jd69420" role="button" target="_blank"><i class="fa fa-github fa-lg fa-fw"></i>Github</a>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">ABOUT</h1>
+      <div class="col-md-4">
+        <div class="profile-pic center-block">
+          <img  src="https://avatars.githubusercontent.com/u/2571765?v=3" alt="" class="img-responsive"/>
+          <div class="social-icons text-center">
+          <a href="https://www.twitter.com/Blueghost1998" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.github.com/anthonymi4" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://t.me/Blueghost2003" target="_blank"><i class="fa fa-telegram"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p>JD is a freelancer who likes tinkering with stuff.</p>
+        <p>I do things for fun and usually regret some of it..</p>
+          
+      </div>
+      <div class="col-md-4">  
+        <p>Has used wordpress, weeblyn & wix</p>
+        <p>For comments or questions, feel free to hit me up on <a href="https://twitter.com/Blueghost1998">Twitter</a> or via email.</p>
+        <p><h3>Tools & Areas of Expertise:</h3> WordPress, Python, Javascript, jQuery, HTML & CSS3, Bootstrap,C#.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<div id="portfolio">
+  <div class="container text-center">
+    <h1>Portfolio</h1>
+    <p>Below are some of my selected works.</p>
+    <div class="row">
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <a href="http://www.studynet.ng" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+          <div class="">
+            <h3 class="portfolio-title">StudyNET.ng</h3>
+            <p class="portfolio-subtitle">WordPress, PHP.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <a href="http://www.anthomiproperties.com" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+          <div class="">
+            <h3 class="portfolio-title">Anthomi Properties</h3>
+            <p class="portfolio-subtitle">WordPress, PHP.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <a href="https://play.google.com/store/apps/details?id=com.wytelyte.nysc.handbook&hl=en" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+          <div class="">
+            <h3 class="portfolio-title">NYSC Handbook</h3>
+            <p class="portfolio-subtitle">Android, Java.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <div class="container" >
+        <div class="row" >
+          <div class="col-md-12">
+            <p>Got a WordPress site and need some help?
+              <a class="btn btn-success pull-right contact-btn" href="https://www.twitter.com/aanaedu" role="button" target="_blank">Say hi</a></p>
+         </div>
+        </div>
+    </div>
+ </div>
+<footer class="text-center">
+  <div class="footer-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <span>Copyright &copy; Delario corp <span class="copyright-date">2015</span>. All rights reserved.</span>
+</footer>
